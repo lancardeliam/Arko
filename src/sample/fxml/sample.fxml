@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="860.0" style="-fx-background-color: #8B0000;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller_Reg">
+    <children>
+          <TextField fx:id="logPassword" layoutX="318.0" layoutY="259.0" prefHeight="25.0" prefWidth="208.0" promptText="Password" />
+          <TextField fx:id="logEmail" layoutX="318.0" layoutY="300.0" prefHeight="25.0" prefWidth="208.0" promptText="Email" />
+      <Button fx:id="singUpButton" layoutX="331.0" layoutY="371.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="172.0" style="-fx-background-color: rgb(255, 255, 255,0); -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-radius: 10;" text="Регистрация" textFill="#fcfafa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="logUsername" layoutX="318.0" layoutY="217.0" prefHeight="25.0" prefWidth="208.0" promptText="Username" />
+      <ImageView fitHeight="116.0" fitWidth="126.0" layoutX="360.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/file.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
