@@ -38,6 +38,7 @@ public class Controller {
 
         client.connect();
         client.handle();
+
         connectButton.setOnAction(event -> {
             enterUser();
 

@@ -5,16 +5,11 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentSkipListSet;
 
 public class ServerHandler extends Thread {
 
     private final ServerSocket server;
-//    public static Set<Socket> clients = Collections.newSetFromMap(new ConcurrentHashMap<>());
     public static List<Socket> clients = new ArrayList<>();
     public ServerHandler(ServerSocket server) {
         this.server = server;

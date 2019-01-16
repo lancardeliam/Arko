@@ -8,7 +8,6 @@ import sample.controller.Controller_Reg;
 
 import java.io.*;
 import java.net.Socket;
-import java.util.List;
 
 public class Client extends Thread {
 

@@ -10,8 +10,6 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ClientHandler extends Thread {
 
@@ -75,28 +73,6 @@ public class ClientHandler extends Thread {
      dos.writeInt(idMessage);
      dos.writeBoolean(free);
     }
-    //
-//    public void send(List<UserMessage> result, int idMessage) {
-//        try {
-//            DataOutputStream dos = new DataOutputStream(client.getOutputStream());
-//            dos.writeInt(idMessage);
-//            ObjectOutputStream ous = new ObjectOutputStream(client.getOutputStream());
-//            ous.writeObject(result);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public void send(boolean free, int idMessage) {
-//        try {
-//            DataOutputStream dos = new DataOutputStream(client.getOutputStream());
-//// ObjectOutputStream ous = new ObjectOutputStream(dos);
-//            dos.writeInt(idMessage);
-//            dos.writeBoolean(free);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
     private boolean readData() {
         try {
