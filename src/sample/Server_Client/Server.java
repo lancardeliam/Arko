@@ -15,7 +15,6 @@ public class Server {
     private static ServerSocket server;
 
 
-
     private static void start() throws IOException {
         server = new ServerSocket(1234,0,InetAddress.getByName("localhost"));
     }
